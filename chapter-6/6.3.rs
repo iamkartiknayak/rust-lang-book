@@ -1,0 +1,19 @@
+// 6.3 => Enums & Pattern Matching - Enum Methods
+
+// example enum
+enum Message {
+    Quit,
+    Move { x: i32, y: i32 },
+    Write(String),
+    ChangeColor(i32, i32, i32),
+}
+
+impl Message {
+    fn print_message() {
+        println!("Rust is awesome!");
+    }
+}
+
+fn main() {
+    Message::print_message();
+}
