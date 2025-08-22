@@ -4,7 +4,6 @@ use std::collections::HashMap;
 
 fn main() {
     let text = "Hello world wonderful world";
-
     let mut map = HashMap::new();
 
     for word in text.split_whitespace() {
@@ -13,9 +12,6 @@ fn main() {
     }
 
     println!("{:?}", map);
-    let s1 = String::from("hello");
-    let s2 = format!("{} world", s1); // s1 is moved, not cloned
-    println!("{}", s1);
 }
 
 /*
